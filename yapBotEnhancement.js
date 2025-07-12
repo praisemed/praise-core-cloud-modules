@@ -12,12 +12,13 @@ export function run() {
     document.body.appendChild(el);
 }
 
-// Optional Panel export for dynamic UI injection
+// Panel export for dynamic UI injection
 export const Panel = () => {
     return (
-        <div style={{ padding: "20px", color: "#0ff" }}>
+        <div style={{ padding: "20px", color: "#0ff", fontFamily: "sans-serif" }}>
             <h2>🤖 Yap Bot Enhancement Panel</h2>
-            <p>This panel was dynamically injected by Praise Core.</p>
+            <p>This panel was dynamically injected via Praise Core dynamic loader.</p>
+            <p>You can remotely add panels like this anytime without Play Store updates.</p>
         </div>
     );
 };
@@ -26,4 +27,5 @@ export const panelConfig = {
     path: "/yapbot-enhancement",
     name: "Yap Bot+"
 };
+
 
