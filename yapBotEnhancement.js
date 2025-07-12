@@ -1,12 +1,8 @@
 // yapBotEnhancement.js
+import React from "react";
+
 export function run() {
     console.log("✅ Yap Bot Enhancement module loaded and running!");
-
-    // Example mock functionality:
-    const messages = ["Tracking trending projects...", "Auto-yapping enabled!", "Analyzing feeds..."];
-    messages.forEach(msg => console.log("🤖 YapBot:", msg));
-
-    // If integrating into UI:
     const el = document.createElement("div");
     el.textContent = "🤖 Yap Bot Enhancement Active!";
     el.style.padding = "10px";
@@ -15,3 +11,19 @@ export function run() {
     el.style.fontFamily = "monospace";
     document.body.appendChild(el);
 }
+
+// Optional Panel export for dynamic UI injection
+export const Panel = () => {
+    return (
+        <div style={{ padding: "20px", color: "#0ff" }}>
+            <h2>🤖 Yap Bot Enhancement Panel</h2>
+            <p>This panel was dynamically injected by Praise Core.</p>
+        </div>
+    );
+};
+
+export const panelConfig = {
+    path: "/yapbot-enhancement",
+    name: "Yap Bot+"
+};
+
